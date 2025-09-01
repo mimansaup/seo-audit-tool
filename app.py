@@ -950,14 +950,14 @@ def run_audit(url: str, primary_kw: str, lsi_csv: str, originality_pct_input: st
 st.set_page_config(page_title="On-Page SEO Audit (5-Pillar)", layout="wide")
 st.title("On-Page SEO Audit (5-Pillar Framework)")
 
-with st.sidebar:
-    st.markdown("### Inputs")
-    url = st.text_input("Page URL (include http/https)")
-    primary_kw = st.text_input("Primary Keyword (for density/placement)", "")
-    lsi_csv = st.text_area("LSI / Related Terms (comma-separated)", "")
-    originality_pct_input = st.text_input("Originality % (optional, e.g., 97)")
-    psi_key = st.text_input("PageSpeed Insights API Key (optional)", type="password")
-    run = st.button("Run Audit")
+
+st.markdown("### Inputs")
+url = st.text_input("Page URL (include http/https)")
+primary_kw = st.text_input("Primary Keyword (for density/placement)", "")
+lsi_csv = st.text_area("LSI / Related Terms (comma-separated)", "")
+originality_pct_input = st.text_input("Originality % (optional, e.g., 97)")
+psi_key = st.text_input("PageSpeed Insights API Key (optional)", type="password")
+run = st.button("Run Audit")
 
 if run:
     if not url or not url.startswith(("http://", "https://")):
