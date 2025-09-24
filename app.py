@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import streamlit as st
 
 # ------------------------------
-# CONFIG / FALLBACKS
+# CONFIGURATION / FALLBACKS
 # ------------------------------
 SCRAPER_API_KEY = ""  # optional fallback; leave empty if you don't have one
 
