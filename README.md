@@ -9,9 +9,3 @@ Built with Python, scikit-learn, SHAP, and Streamlit.
 - Visualize churn distribution
 - Explain churn drivers using SHAP
 - Business insights & recommendations
-
-## Setup
-```bash
-git clone https://github.com/mimansaup/customer-churn-dashboard.git
-cd customer-churn-dashboard
-pip install -r requirements.txt
